@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adni_gumilang.webviewbrowser.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv1"
+            android:layout_margin="8dp"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Https://"
+                android:ems="10"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/txturl"
+                android:textColor="#807f7f"
+                android:background="#fff"
+                android:layout_toStartOf="@+id/btncari" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/btncari"
+                android:textColor="#fff"
+                android:text="Cari"
+                android:background="@color/colorAccent"
+                android:layout_alignBottom="@+id/txturl" />
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <include layout="@layout/content_main" />
+
+</android.support.design.widget.CoordinatorLayout>
